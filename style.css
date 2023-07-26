@@ -1,0 +1,199 @@
+/* Reset CSS */
+html, body, h1, h2, h3, p, ul, li, button, footer, hr {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header ve Navigasyon */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Bölüm Stilleri */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* İndirme Butonu */
+.indirme-button {
+    background-color: #6f42c1;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px; /* İndirme butonu üstündeki boşluğu ayarlayın */
+}
+
+.indirme-button:hover {
+    background-color: #5936a0;
+}
+
+/* Uzun Çizgi */
+.uzun-cizgi {
+    height: 2px;
+    background-color: #ddd;
+    border: none;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* Paylaşım Paneli */
+#paylasim ul {
+    list-style: none;
+}
+
+#paylasim li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#paylasim a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* YouTube için Kırmızı Renk */
+#paylasim a[href*="youtube"] {
+    color: #FF0000;
+}
+
+/* Discord için Mavi Renk */
+#paylasim a[href*="discord"] {
+    color: #0000FF;
+}
+
+/* GitHub için Siyah Renk */
+#paylasim a[href*="github"] {
+    color: #000000;
+}
+
+/* Steam için Mavi Renk */
+#paylasim a[href*="steam"] {
+    color: #0000FF;
+}
+
+#paylasim a:hover {
+    text-decoration: underline;
+}
+
+/* Sosyal medya hesaplarını ortala */
+#paylasim .social-media-container {
+    text-align: center;
+}
+
+/* Fotoğraf Container */
+.foto-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.foto-container .foto {
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+}
+
+.foto-container img {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.foto-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: none;
+}
+
+.foto-container .foto:hover .foto-info {
+    display: block;
+}
+
+/* Bulancak Giriş Ekranı */
+.foto-container .foto[data-ad="Fotoğraf 2"] {
+    order: 1; /* Fotoğrafı aşağıya taşımak için sırasını değiştiriyoruz */
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Telif Hakkı yazısını ortala ve beyaz yap */
+footer p {
+    margin: 0 auto;
+    max-width: 400px; /* İstediğiniz genişliği ayarlayabilirsiniz */
+    color: rgb(0, 0, 0); /* Telif Hakkı yazısının rengini beyaz yapın */
+}
+
+/* Karanlık Mod */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* İndirme Bölümündeki Yazıları Yukarı Taşı */
+#indirme p {
+  margin-top: 1px; /* Yazıları yukarı taşımak için pozitif margin kullanıyoruz */
+  margin-bottom: 1px; /* Yazılar arasında boşluk bırakmak için alt kenar boşluğunu ayarlıyoruz */
+}
+
+/* İndirme Bölümündeki Başlık ile Paragraflar Arasına Boşluk Bırak */
+#indirme h2,
+#indirme p {
+  margin-bottom: 10px;
+}
+
+/* Hakkımda Bölümündeki Yazıları Yukarı Taşı */
+#hakkimda p {
+  margin-top: 1px; /* Yazıları yukarı taşımak için pozitif margin kullanıyoruz */
+  margin-bottom: 1px; /* Yazılar arasında boşluk bırakmak için alt kenar boşluğunu ayarlıyoruz */
+}
+
+/* Hakkımda Bölümündeki Başlık ile Paragraflar Arasına Boşluk Bırak */
+#hakkimda h2,
+#hakkimda p {
+  margin-bottom: 10px;
+}
